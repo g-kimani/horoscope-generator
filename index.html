@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link href="main.css" rel="stylesheet" type="text/css" /> -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="header">
+        Header
+        <div class="logo glow">logo</div>
+        <div class="navigation"><a>home</a><a>house</a></div>
+      </div> -->
+      <div class="generator">
+        <h1 class="title">Horoscope</h1>
+        <div class="sign-container">
+          <div class="sign"></div>
+        </div>
+        <div class="info-grid">
+          <div class="age-input">
+            <!-- <label for="month">Month:</label> -->
+            <select
+              type="text"
+              id="monthSelect"
+              name="month"
+              title="month"
+            ></select>
+
+            <!-- <label for="day">Day:</label> -->
+            <select id="daySelect" name="day" title="day"></select>
+          </div>
+          <button class="gen-btn" type="button" title="generate">
+            generate
+          </button>
+
+          <div class="fortune text">Fortune</div>
+          <div class="advice text">Advice</div>
+        </div>
+      </div>
+    </div>
+    <div class="trasition"></div>
+    <footer class="footer">
+      <h1>Footer</h1>
+    </footer>
+    <!-- <script>
+      // Create an array of months
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      // Populate the datalist options with the months
+      const monthSelect = document.getElementById("monthSelect");
+
+      // Create options for the day select element
+      const daySelect = document.getElementById("daySelect");
+      for (let i = 1; i <= 31; i++) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.text = i;
+        daySelect.appendChild(option);
+      }
+    </script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
